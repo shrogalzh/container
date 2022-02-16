@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="465dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_of_people"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:textAllCaps="false"
+        android:textColorHint="#BDB1BD"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="375dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="301dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_rounded"
+        android:text="login"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/layer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
